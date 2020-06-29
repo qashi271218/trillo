@@ -1,0 +1,122 @@
+.gallery
+{
+	display: flex;
+}
+.gallery-item
+{
+
+}
+.gallery-photo
+{
+max-width: 100%;
+display: block;
+}
+
+.hotel-overview
+{
+display:flex;
+align-items: center;
+border-bottom: 2px solid var(--Grey-light-2);
+}
+.overview-heading
+{
+font-size: 2.25rem;
+font-weight: 300;
+text-transform: uppercase;
+letter-spacing: 1px;
+padding: 1.5rem 3rem;
+}
+.overview-star
+{
+margin-right: auto;
+}
+.overview-location-icon,
+.overview-icon
+{
+
+height: 1.7rem;
+width: 1.7rem;
+color: var(--Primary);
+}
+.overview-location-icon
+{
+	margin-right: .5rem;
+}
+.overview-location
+{
+font-size: 2rem;
+display: flex;
+vertical-align: middle;
+}
+.button-inline
+{
+border: none;
+color: var(--Primary);
+font-size: inherit;
+font-family: inherit;
+border-bottom: 1px solid currentcolor;
+padding-bottom: 2px;
+display: inline-block;
+background-color: transparent;
+cursor: pointer;
+transition: all .3s;
+}
+.button-inline span
+{
+	margin-left:3px;
+}
+.button-inline:hover span
+{
+margin-left: 8px;
+transition: margin-left .3s;
+}
+.button-inline:hover
+{
+	color: var(--Grey-dark-1);
+}
+.button-inline:focus
+{
+	outline: none;
+	animation: pulsate 1s infinite;
+
+}
+@keyframes pulsate
+{
+	0%
+	{
+transform: scale(1);
+		box-shadow:none;
+	}
+	50%
+	{
+		transform: scale(1.05);
+		box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+	}
+	100%
+	{
+transform: scale(1);
+		box-shadow:none;
+	}
+}
+.overview-rating
+{
+background-color: var(--Primary);
+margin-left:3rem ;
+color: white;
+align-self: stretch;
+padding: 0 2.25rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center
+}
+.overview-rating-average
+{
+font-size: 2.25rem;
+font-weight: 300;
+}
+.overview-rating-count
+{
+font-size: .8rem;
+text-transform: uppercase;
+}

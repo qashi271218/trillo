@@ -1,0 +1,136 @@
+@media(max-width:1200px)
+{
+	body
+	{
+		background-color: transparent;
+	}
+	.container
+	{
+		margin: 0;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+@media(max-width:1040px)
+{
+	html
+{
+	font-size: 50%;
+}
+}
+
+
+ @media(max-width:704px)
+{
+	.recommend
+	{
+		flex-direction: column;
+	}
+	.recommend-count
+	{
+		margin: 0 0 1rem 0;
+	}
+}
+
+@media(max-width:704px)
+{
+	.list
+	{
+		flex-direction: column;
+	}
+} 
+
+/* @media(max-width:690px)
+{
+	.overview-location
+	{
+		font-size: 1rem;
+	}
+} */
+
+@media(max-width:900px)
+{
+	.content
+	{
+		flex-direction: column;
+	}
+}
+@media(max-width:900px)
+{
+	.side-nav
+	{
+		display: flex;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	.legal
+	{
+		display: none;
+	}
+	.side_nav_item
+	{
+		flex: 1;
+	}
+}
+
+@media(max-width:548px)
+{
+.hotel-overview
+{
+	flex-direction: column;
+}
+.overview-star
+{
+	margin: 0;
+}
+.overview-location
+{
+	margin-bottom: 1rem;
+}
+.overview-rating
+{
+	margin-bottom: 1rem;
+}
+}
+
+ @media(max-width:478px)
+{
+.description
+{
+	margin-right: 0;
+}
+.detail
+{
+	flex-direction: column;
+	padding: 0;
+}
+.user-reviews
+{
+	margin-top: 1.5rem;
+}
+} 
+
+@media(max-width:450px)
+{
+	.side_nav_link
+	{
+		flex-direction: column;
+		padding: 0!important;
+	}
+	.side_nav_icon
+	{
+		margin-right: 0;
+	}
+	.header
+	{
+		flex-wrap: wrap;
+		 height: 11rem;
+	}
+	.search
+	{
+      order: 1;
+      flex: 0 0 100%;
+      background-color: var(--Grey-light-2);
+	}
+
+}

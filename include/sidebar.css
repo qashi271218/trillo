@@ -1,0 +1,72 @@
+.side-nav
+{
+font-size: 1.4rem;
+list-style: none;
+margin-top: 3.5rem;
+}
+.side_nav_item
+{
+	position: relative;
+}
+.side_nav_item:not(:last-child)
+{
+	margin-bottom: .5rem;
+}
+.side_nav_item:before
+{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 3px;
+background-color: var(--Primary);
+transform: scaleY(0);
+transition: transform .2s,
+            width .4s .2s,
+            background-color .1s;
+}
+.side_nav_item:hover:before
+{
+	transform: scaleY(1);
+	width: 100%;
+	color: #fff;
+}
+.side_nav_item:active:before
+{
+background-color: var(--Primary-light);
+}
+.side_nav_link:link,
+.side_nav_link:visited
+{
+color: var(--Grey-light-1);
+text-decoration: none;
+text-transform: uppercase;
+display: block;
+padding: 1.5rem 3rem;
+display: flex;
+align-items: center;
+position: relative;
+z-index: 10;
+}
+.active
+{
+	background-color: var(--Primary);
+}
+.side_nav_link:hover
+{
+
+}
+.side_nav_icon
+{
+	width: 1.75rem;
+	height: 1.75rem;
+	margin-right: 2rem;
+}
+.legal
+{
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 2.5rem;
+	color: var(--Grey-light-4);
+}
